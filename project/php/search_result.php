@@ -54,7 +54,7 @@
 	$conn = mysql_connect("localhost", "client", "client");
 	mysql_select_db("project", $conn);
 	
-	$sql = "SELECT license_plate, manufacturer, model, year, color, price FROM car";
+	$sql = "SELECT license_plate, manufacturer, model, year, color, price FROM car ";
 	$sql_parameters = "";
 	
 	$search_field_count = 0;
