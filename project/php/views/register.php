@@ -28,7 +28,7 @@
 	if (array_key_exists('user_name', $_SESSION))
 	{
 		echo 'Hey, '.$_SESSION['user_name'].'. ';
-		echo '<a href="./php/login.php?logout">Logout</a>';
+		echo '<a href="login.php?logout">Logout</a>';
 		echo '<br><br>';
 	}		
 ?>
@@ -69,9 +69,6 @@ if (isset($registration)) {
     <input type="submit"  name="register" value="Register" />
 
 </form>
-
-<!-- backlink -->
-<a href="index.php">Back to Login Page</a>
 
 
 </div>
