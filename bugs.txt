@@ -5,3 +5,5 @@ the user can enter #-year payment and downpayment values above and below the max
 Manager can enter empty register to the database
 
 The page style has several design problems
+
+
