@@ -161,34 +161,42 @@
 	
 	$result = mysql_query($sql, $conn);
 	
-	
 	print "<table border = 1>\n";
 
-	//get field names
-	print "<tr>\n";
-	while ($field = mysql_fetch_field($result)){
-	print " <th>$field->name</th>\n";
-	} // end while
-	print "</tr>\n\n";
-
-	//get row data as an associative array
-	while ($row = mysql_fetch_assoc($result)){
+	if (mysql_num_rows($result)==0)
+	{
+		echo "<br> There is no car with this criteria.";
+	}
+	else
+	{
+		//get field names
 		print "<tr>\n";
-		//look at each field
-		foreach ($row as $col=>$val){
-			print " <td>$val</td>\n";
-		} // end foreach
-		print 
-		"<td>
-			<form action='view_car.php' method='post' name='view_car_form' method='post'>
-				<input type=hidden name='license_plate' value=".$row['license_plate'].">
-				<input type=submit name='view_car_button' value='view car' onClick='(view_car_form.license_plate.value'>
-			</form>
-		</td>\n";
+		while ($field = mysql_fetch_field($result)){
+		print " <th>$field->name</th>\n";
+		} // end while
 		print "</tr>\n\n";
-	}// end while
+		
+		
+		//get row data as an associative array
+		while ($row = mysql_fetch_assoc($result)){
+			print "<tr>\n";
+			//look at each field
+			foreach ($row as $col=>$val){
+				print " <td>$val</td>\n";
+			} // end foreach
+			print 
+			"<td>
+				<form action='view_car.php' method='post' name='view_car_form' method='post'>
+					<input type=hidden name='license_plate' value=".$row['license_plate'].">
+					<input type=submit name='view_car_button' id='view_car_button'  value='view car' onClick='(view_car_form.license_plate.value)'>
+				</form>
+			</td>\n";
+			print "</tr>\n\n";
+		}// end while
 
-	print "</table>\n";
+		print "</table>\n";
+	}
+
  ?>
  
  
