@@ -17,8 +17,8 @@
 <?php 
 	if (array_key_exists('user_name', $_SESSION))
 	{
-		echo '<a href="insert.php">Insert</a>  -  ';
-		echo '<a href="delete.php">Delete</a>  -  ';
+		echo '<a href="./../insert.php">Insert</a>  -  ';
+		echo '<a href="./../delete.php">Delete</a>  -  ';
 	}
 ?>
 <a href='./../search.php'>Search</a>  -  
