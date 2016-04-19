@@ -36,7 +36,7 @@
 	?>
 	
 	<form action="./php/delete_result.php" method="post" name="delete_form" method="post">
-		License plate:<br>
+		License Plate:<br>
 		<input type=text name="license_plate"><br>
 		<br>
 		<input type=submit name="delete_button" value="delete" onClick="(delete_form.license_plate.value)"><br><br>

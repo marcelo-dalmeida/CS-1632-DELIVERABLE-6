@@ -14,8 +14,8 @@
 <div class='content1'> Search Personal info <br>
 <a href='./../index.php'>Main Menu</a>  -  
 <a href='./../insert.php'>Insert</a>  -  
+<a href='./../delete.php'>Delete</a>  -
 <a href='./../search.php'>Search</a>  -  
-<a href='./../delete.php'>Delete</a>  -  
 <a href="login.php">Login</a><br><br>
 
 
