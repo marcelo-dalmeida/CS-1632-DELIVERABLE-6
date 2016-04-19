@@ -1,0 +1,64 @@
+User Story (Login):
+  As a car sales manager
+  I want to be able to securely login to the system
+  So that only account holders can add new user accounts
+
+  Scenarios:
+    // Given that I am I on the login page
+  	// When I enter a username that does not exist
+  	// Then I should not be able to proceed from the login page
+  	// And I should be prompted with a message stating what was wrong
+    invalidUser
+
+    // Given that I am on the login page
+  	// When I enter a correct username
+  	// And an incorrect password
+  	// Then I should not be able to proceed from the login page
+  	// And I should be prompted with a message stating what is wrong
+    invalidPassword
+
+    // Given that I am on the login page
+  	// When I enter valid login credentials
+  	// Then I should be able to access more features
+  	// And I should see a message indicating a successful login
+    correctLogin
+
+    // Given that I am successfully logged in
+  	// When I select the "Login" option
+  	// Then I can create a new account
+    createAccount
+
+    // Given that I have created a new account
+    // When I log out
+    // Then I can login and use the newly generated account
+    loginNewAccount
+
+    // Given that I am successfully logged in
+  	// When I create a new manager account with the same username/email as an existing account
+  	// Then the original account will not be overwritten
+  	// And the new account will not be created
+    createExistingUser
+
+    // Given that I am successfully logged in
+  	// When I try to register a new account
+  	// And use a username that does not meet the pattern specified
+  	// Then I cannot proceed to a new page
+    createBadUsername
+
+    // Given that I am successfully logged in
+  	// When I try to register a new account
+  	// And use an email address that does not meet the pattern specified
+  	// Then I cannot proceed to a new page
+    createBadEmail
+
+    // Given that I am successfully logged in
+  	// When I try to register a new account
+  	// And the password does not match the repeated password
+  	// Then I will be informed that the registration has failed
+    createPswrdNoMatch
+
+    // Given that I am successfully logged in
+  	// When I try to register a new account
+  	// And the password is too short
+  	// Then I cannot proceed to a new page
+    createPswrdTooShort

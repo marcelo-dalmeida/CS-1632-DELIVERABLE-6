@@ -1,0 +1,47 @@
+User Story (PaymentCalculator
+    As a general user (either a manager or non-account user)
+    I would like to be able to calculate the estimated price of a car
+    So that I know how much it would cost me to buy that car with taxes, interest, and other fees included
+
+    Scenarios
+        // Given that I have selected a car
+    	// And am currently viewing its information page
+        // When I don't change any values in the price calculator
+    	// Then the correct total price will be calculated for the car for 1 month (0 yrs) with no down-payment
+        defaultValues
+
+        // Given that I have selected a car
+        // And am currently viewing its information page
+        // When I change only the down-payment in the price calculator
+        // Then the correct total price will be calculated for the car for 1 month (0 yrs) with the specified down-payment
+        changeDownPayment
+
+        // Given that I have selected a car
+        // And am currently viewing its information page
+        // When I change only the number of years in the price calculator
+        // Then the correct total price will be calculated for the car for n * 12 months (n yrs) with no down-payment
+        changeNumYears
+
+        // Given that I have selected a car
+        // And am currently viewing its information page
+        // When I enter non-numeric characters into the down-payment field
+        // Then the results fields should be empty/not change (except for "Number of months" which will revert to its default value of 1)
+        invalidDwnPymnt
+
+        // Given that I have selected a car
+        // And am currently viewing its information page
+        // When I enter non-numeric characters into the number of years field
+        // Then the results fields should be the same as the default behavior
+        invalidNumYrs
+
+        // Given that I have selected a car
+        // And am currently viewing its information page
+        // When I enter a negative value into the down-payment field
+        // Then the results fields should behave as normal using negative values
+        negativeDwnPymnt
+
+        // Given that I have selected a car
+        // And am currently viewing its information page
+        // When I enter a negative value into the number of years field
+        // Then the results fields should be the same as the default behavior
+        negativeNumYrs
