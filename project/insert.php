@@ -48,7 +48,7 @@
 		Price:<br>
 		<input type=number min="0" step="0.01" name="price"><br>
 		<br>
-		<input type=submit name="insert" value="insert" onClick="insert(insert_form.license_plate.value, insert_form.manufacturer.value, insert_form.model.value,
+		<input type=submit name="insert_button" value="insert" onClick="(insert_form.license_plate.value, insert_form.manufacturer.value, insert_form.model.value,
 		insert_form.year.value, insert_form.color.value, insert_form.price.value)"><br><br>
 	</form>
 	

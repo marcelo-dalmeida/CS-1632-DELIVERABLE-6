@@ -96,7 +96,7 @@
 		
 		
 		<br>
-		<input type=submit name="search" value="search" onClick="search(search_form.license_plate.value, search_form.manufacturer.value, search_form.model.value,
+		<input type=submit name="search_button" value="search" onClick="(search_form.license_plate.value, search_form.manufacturer.value, search_form.model.value,
 		search_form.year.value, search_form.color.value, search_form.price.value,
 		search_form.manufacturer_logical.value, search_form.model_logical.value, search_form.year_logical.value, search_form.color_logical.value, search_form.price_logical.value,
 		search_form.year_comparative.value, search_form.price_comparative.value)"><br><br>

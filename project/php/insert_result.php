@@ -51,9 +51,16 @@
 	
 	$sql = "INSERT INTO car (license_plate, manufacturer, model, year, color, price, picture_name) 
 	VALUES ('$license_plate', '$manufacturer', '$model', '$year', '$color', '$price', '$picture_name');";
-	mysql_query($sql, $conn);
+	$result = mysql_query($sql, $conn);
+
+	if ($result == 1){
+		echo "<br/> Inserted";
+	}
+	else {
+		echo "<br/> There is already a car with this license plate";
+	}
+		
 	
-	echo "<br/> Inserted";
  ?>
  
   

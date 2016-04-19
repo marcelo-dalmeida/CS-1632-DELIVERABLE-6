@@ -155,6 +155,7 @@
 	echo $sql_parameters;
 	
 	$sql = $sql . $sql_parameters . ";";
+
 	
 	
 	
@@ -181,7 +182,7 @@
 		"<td>
 			<form action='view_car.php' method='post' name='view_car_form' method='post'>
 				<input type=hidden name='license_plate' value=".$row['license_plate'].">
-				<input type=submit name='view_car' value='View car' onClick='view_car(view_car_form.license_plate.value'>
+				<input type=submit name='view_car_button' value='view car' onClick='(view_car_form.license_plate.value'>
 			</form>
 		</td>\n";
 		print "</tr>\n\n";

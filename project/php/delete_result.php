@@ -42,9 +42,14 @@
 	
 	
 	$sql = "DELETE FROM car WHERE license_plate = '$license_plate';";
-	mysql_query($sql, $conn);
+	$result = mysql_query($sql, $conn);
 	
-	echo "<br/>Deleted";
+	if (mysql_affected_rows()){
+		echo "<br/> Deleted";
+	}
+	else {
+		echo "<br/> There isn't a car with this license plate";
+	}
  ?>
  
   

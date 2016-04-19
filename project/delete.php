@@ -39,7 +39,7 @@
 		License plate:<br>
 		<input type=text name="license_plate"><br>
 		<br>
-		<input type=submit name="delete" value="delete" onClick="delete(delete_form.license_plate.value)"><br><br>
+		<input type=submit name="delete_button" value="delete" onClick="(delete_form.license_plate.value)"><br><br>
 	</form>
 	</div>
 </div>

@@ -38,7 +38,7 @@
 		document.getElementById('total_price').value = total_price.toFixed(2)
 	}
 	
-
+	
 </script>		
 
 </head>
