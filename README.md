@@ -12,17 +12,18 @@ IMPORTANT:
 >    2.  name it "login" (exactly)
 >    3.  import login.sql (in CS-1632-DELIVERABLE-6 directory)
 >    4.  uncheck "Partial Import"
->    5.  select Priveledges tab
->    6.  add user account (under "NEW")
+>    5.  create new database
+>    6.  name it "project" (exactly)
+>    7. import car.sql (in CS-1632-DELIVERABLE-6 directory)
+>    8. uncheck "Partial Import"
+>    9.  select Priveledges tab
+>    10.  add user account (under "NEW")
 >        username: client
 >        password: client
 >        hostname localhost (from dropdown menu)
 >        Global priveledges: SELECT
->    7.  Hit "Go" once
->    8.  create new database
->    9.  name it "project" (exactly)
->    10. import car.sql (in CS-1632-DELIVERABLE-6 directory)
->    11. uncheck "Partial Import"
+>    11.  Hit "Go" once
+
 
 6)  Test the webapp by playing around (email pcn7@pitt.edu or maa261@pitt.edu for more help)
 7)  keep XAMPP running for the tests
