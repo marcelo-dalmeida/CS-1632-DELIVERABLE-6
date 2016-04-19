@@ -1,9 +1,0 @@
-SQL Injection (as well as other security problems)
-
-the user can enter #-year payment and downpayment values above and below the max and the min defined by the html input type
-
-Manager can enter empty register to the database
-
-The page style has several design problems
-
-
