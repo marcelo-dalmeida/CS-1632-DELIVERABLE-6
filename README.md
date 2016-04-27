@@ -1,5 +1,9 @@
 # CS-1632-DELIVERABLE-6
 
+
+updated_project.zip contains the web-site updated version, including minor fixes and a style template, which it was not the focus of the assignment
+
+
 Marcelo d'Almeida and Philip Ni
 
 IMPORTANT:
